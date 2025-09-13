@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divya's Digital Space</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; background: #0f0f0f; color: #fff; line-height: 1.6; }
+    
+    /* Header */
+    header { background: linear-gradient(135deg, #ff416c, #ff4b2b); padding: 60px 20px; text-align: center; animation: fadeIn 2s ease-in-out; }
+    header h1 { font-size: 3em; }
+    header p { font-size: 1.2em; margin-top: 10px; color: #f0f0f0; }
+    
+    /* Navigation */
+    nav { display: flex; justify-content: center; background: #111; padding: 12px; position: sticky; top: 0; z-index: 100; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: 500; transition: 0.3s; }
+    nav a:hover { color: #ff4b2b; text-shadow: 0 0 10px #ff4b2b; }
+    
+    /* Sections */
+    section { padding: 70px 20px; max-width: 1000px; margin: auto; animation: slideUp 1s ease; }
+    h2 { color: #ff4b2b; margin-bottom: 25px; text-align: center; font-size: 2em; }
+    
+    /* Card Layout */
+    .cards { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .card { background: #1a1a1a; padding: 20px; border-radius: 15px; flex: 1 1 250px; transition: transform 0.3s, box-shadow 0.3s; text-align: center; }
+    .card:hover { transform: translateY(-12px) scale(1.05); box-shadow: 0 10px 25px rgba(255,75,43,0.6); }
+    .card h3 { color: #ff416c; margin-bottom: 10px; }
+    .card p { font-size: 0.95em; color: #ccc; }
+    
+    /* Contact Section */
+    #contact { background: linear-gradient(135deg, #111, #1f1f1f); border-radius: 15px; padding: 40px; box-shadow: 0 0 20px rgba(255,75,43,0.5); text-align: center; }
+    #contact a { color: #ff4b2b; text-decoration: none; font-weight: bold; transition: 0.3s; }
+    #contact a:hover { color: #fff; text-shadow: 0 0 10px #ff4b2b; }
+    
+    /* Footer */
+    footer { background: #111; color: #aaa; text-align: center; padding: 20px; margin-top: 40px; font-size: 0.9em; }
+    footer a { color: #ff4b2b; text-decoration: none; }
+    
+    /* Animations */
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideUp { from { transform: translateY(50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    
+    @media(max-width: 768px) { .cards { flex-direction: column; align-items: center; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Divya's Digital Space</h1>
+  <p>Innovating | Coding | Creating</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I'm Divya, a passionate CSE student and developer. I enjoy crafting modern web solutions, exploring cloud technologies, and building impactful projects that make a difference.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>🚴 Smart Bicycle Tracker</h3>
+      <p>An IoT project integrating GPS tracking and cloud dashboards to monitor bicycles in real-time.</p>
+    </div>
+    <div class="card">
+      <h3>💻 Portfolio Website</h3>
+      <p>A personal website to showcase my projects, technical skills, and professional journey online.</p>
+    </div>
+    <div class="card">
+      <h3>📝 Online Quiz App</h3>
+      <p>A dynamic quiz application with timer, score calculation, and responsive UI for all devices.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="cards">
+    <div class="card">⚡ Java</div>
+    <div class="card">🐍 Python</div>
+    <div class="card">🌐 HTML / CSS / JS</div>
+    <div class="card">☁️ AWS EC2</div>
+    <div class="card">🔗 Git & GitHub</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>📧 Email: <a href="mailto:2303A51581@sru.edu.in">2303A51581@sru.edu.in</a></p>
+  <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/dhivyasree" target="_blank">linkedin.com/in/dhivyasree</a></p>
+  <p>💻 GitHub: <a href="https://github.com/divyasree-coder" target="_blank">github.com/divyasree-coder</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Divya. Crafted with ❤️ | Hosted on AWS EC2
+</footer>
+
+</body>
+</html>
+
